@@ -1,112 +1,125 @@
-📚 AI Lecture Voice-to-Notes Generator
+# 🎧 AI Lecture Voice-to-Notes Generator
 
-An AI-powered web application that converts lecture audio into structured study notes.
-It automatically transcribes audio, generates a summary, extracts key points, highlights important sentences, and identifies keywords – all in one place.
+An intelligent Python + Streamlit application that converts lecture audio into structured study notes including transcript, summary, key points, keywords, important sentences, and a downloadable PDF.
 
-🚀 Features
+This project is designed to help students quickly convert recorded lectures into clean, readable notes using AI.
 
-🎙️ Speech to Text – Converts lecture audio (mp3/wav) into text using OpenAI Whisper
+📌 **This project was developed as part of a 1-month AI/ML Internship program under Edunet Foundation.**
 
-📝 Automatic Summary – Generates concise lecture summary
+---
 
-🔑 Key Points Extraction – Lists main points for quick revision
+## 🚀 Features
 
-⭐ Important Sentences – Highlights critical sentences from the lecture
+- 🎙️ **Speech-to-Text Transcription** using OpenAI Whisper  
+- 📝 **Automatic Summary Generation**  
+- 🔑 **Key Points Extraction**  
+- 🏷️ **Keyword Detection**  
+- ⭐ **Important Sentence Highlighting**  
+- 📄 **PDF Export of Notes**  
+- 🖥️ Clean and simple **Streamlit UI**
 
-🏷️ Keyword Extraction – Identifies important keywords
+---
 
-📄 Download as PDF – Export generated notes as a PDF file
+## 🛠️ Tech Stack
 
-🖥️ User-Friendly UI – Built with Streamlit for easy interaction
+- **Python 3.11**
+- **Streamlit** – Web interface
+- **OpenAI Whisper** – Speech recognition
+- **NLTK** – Sentence processing
+- **Transformers** – Text summarization
+- **ReportLab** – PDF generation
 
-🛠️ Tech Stack
+---
 
-Python 3.11
+## 📁 Project Structure
 
-Streamlit – Frontend UI
-
-OpenAI Whisper – Speech-to-text
-
-HuggingFace Transformers – Summarization
-
-NLTK – Sentence processing
-
-ReportLab – PDF generation
-
-📁 Project Structure
-internship/
+```bash
+ai-lecture-notes-generator/
 │
 ├── app.py
+│
 ├── services/
+│   ├── __init__.py
 │   ├── speech_to_text.py
 │   ├── summarizer.py
 │   ├── keywords.py
 │   ├── sentences.py
+│   └── important_sentences.py
 │
 ├── utils/
+│   ├── __init__.py
 │   ├── file_handler.py
-│   ├── pdf_generator.py
+│   └── pdf_generator.py
 │
-├── requirements.txt
-├── README.md
+├── audio/
+│   └── sample audio files
+│
+├── lecture_notes.pdf
+└── README.md
+```
 
-⚙️ Installation & Setup
+---
 
-Clone the repository
+## ▶️ How to Run
 
-git clone https://github.com/USERNAME/ai-lecture-notes-generator.git
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/minciyaks/ai-lecture-notes-generator.git
+```
+
+### 2. Navigate into the project folder
+
+```bash
 cd ai-lecture-notes-generator
+```
+### 3. Create and activate virtual environment
 
-
-Create virtual environment
-
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
+### 4. Install dependencies
 
-
-Install dependencies
-
+```bash
 pip install -r requirements.txt
+```
+### 5. Run the application
 
-
-Run the app
-
+```bash
 streamlit run app.py
+```
+---
 
-📌 Usage
+## 📄 Sample Output
 
-Upload lecture audio file (mp3/wav)
+A sample generated PDF (lecture_notes.pdf) is included in this repository for demonstration and verification of output quality.
 
-Wait for transcription and processing
+---
+## 📌 Use Cases
 
-View transcript, summary, key points, keywords and important sentences
+- Students converting recorded lectures into notes
 
-Click Download as PDF to save notes
+- Self-study and exam revision
 
-🎯 Purpose of the Project
+- Online course learners
 
-This project was developed as part of an internship / academic project to demonstrate the practical application of AI in education, helping students convert audio lectures into organized study material efficiently.
+- Internship / academic project demonstration
 
-📸 Sample Output
 
-Transcript of lecture
+---
 
-Generated summary
+## 👩‍💻 Author
 
-Bullet-point key concepts
+Minciya K S |
+BCA Student 
 
-Highlighted important sentences
+---
 
-Extracted keywords
+## ⚠️ Disclaimer
 
-Downloadable PDF notes
+This project is created for educational and learning purposes only.
 
-👩‍💻 Author
 
-Minciya K S
-BCA Student | AI & Python Enthusiast
+---
 
-⚠️ Note
-
-This project runs locally and is not hosted online.
-It is intended for educational and demonstration purposes.
