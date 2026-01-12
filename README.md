@@ -116,10 +116,5 @@ BCA Student
 
 ---
 
-## ⚠️ Disclaimer
 
-This project is created for educational and learning purposes only.
-
-
----
 
