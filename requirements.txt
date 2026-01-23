@@ -1,0 +1,9 @@
+streamlit
+openai-whisper
+torch
+transformers
+nltk
+reportlab
+pydub
+ffmpeg-python
+numpy
