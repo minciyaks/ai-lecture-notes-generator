@@ -37,6 +37,7 @@ This project is designed to help students quickly convert recorded lectures into
 ai-lecture-notes-generator/
 │
 ├── app.py
+├── requirements.txt
 │
 ├── services/
 │   ├── __init__.py
@@ -84,6 +85,8 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
+⚠️ FFmpeg must be installed on the system for audio processing.
+
 ### 5. Run the application
 
 ```bash
